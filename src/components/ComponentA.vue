@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>{{msg2}}</h2>
+    <strong>{{msgfromFather}}</strong></br>
     <button v-on:click="onClick">click</button>
   </div>
 </template>
@@ -17,8 +18,10 @@ export default {
   methods: {
     onClick: function () {
       alert('111')
+      console.log(this.msgfromFather)
     }
-  }
+  },
+  props: ['msgfromFather']
 }
 
 </script>
