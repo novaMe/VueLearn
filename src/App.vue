@@ -12,12 +12,13 @@
         </li>
       </ul>
     </section>
+    <Componenta></Componenta>
   </div>
 </template>
 
 <script>
 import Store from './store'
-console.log(Store)
+import Componenta from './components/ComponentA'
 export default {
   data () {
     return {
@@ -47,6 +48,9 @@ export default {
       },
       deep: false
     }
+  },
+  components: {
+    Componenta
   }
 }
 </script>
