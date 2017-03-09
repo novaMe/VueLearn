@@ -12,7 +12,7 @@
         </li>
       </ul>
     </section>
-    <Componenta></Componenta>
+    <Componenta msgfromFather='wake up'></Componenta>
   </div>
 </template>
 
