@@ -2,6 +2,9 @@
 
 > this is my first vue project
 
+## Introduction
+> This file is a simple todo list made by vue.js framework. It is a process of learning vue 1.0.
+
 ## Build Setup
 
 ``` bash
