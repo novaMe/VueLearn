@@ -2,6 +2,9 @@
 
 > this is my first vue project
 
+## Introduction
+> This file is a simple todo list made by vue.js framework. It is a process of learning vue 1.0.
+
 ## Build Setup
 
 ``` bash
@@ -26,6 +29,5 @@ npm run e2e
 # run all tests
 npm test
 ```
-## Introduction
-> This file is a simple todo list made by vue.js framework. It is a process of learning vue 1.0.
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
