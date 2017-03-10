@@ -17,8 +17,8 @@ export default {
   },
   methods: {
     onClick: function () {
-      alert('111')
       console.log(this.msgfromFather)
+      this.$emit('childDo', this.msg)
     }
   },
   props: ['msgfromFather']

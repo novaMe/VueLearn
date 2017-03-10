@@ -11,8 +11,9 @@
           {{item.label}}
         </li>
       </ul>
+      <p>child do something to father: {{childsay}}</p>
     </section>
-    <Componenta msgfromFather='wake up'></Componenta>
+    <Componenta msgfromFather='wake up' v-on:childDo="act"></Componenta>
   </div>
 </template>
 
@@ -25,7 +26,8 @@ export default {
       title: '<span>love</span>Vue.js',
       content: 'This is my first vue menu list',
       items: Store.fetch(),
-      newItem: ''
+      newItem: '',
+      childsay: ''
     }
   },
   methods: {
@@ -39,6 +41,9 @@ export default {
       })
       this.newItem = ''
       Store.save()
+    },
+    act: function (msg) {
+      this.childsay = msg
     }
   },
   watch: {
