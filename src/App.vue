@@ -19,7 +19,7 @@
 
 <script>
 import Store from './store'
-import Componenta from './components/ComponentA'
+import Componenta from './components/ComponentA' // 引入自定义组件
 export default {
   data () {
     return {
@@ -56,6 +56,11 @@ export default {
   },
   components: {
     Componenta
+  },
+  events: {
+    childDo: function (msg) {
+      this.childsay = msg
+    }
   }
 }
 </script>

@@ -17,8 +17,10 @@ export default {
   },
   methods: {
     onClick: function () {
-      console.log(this.msgfromFather)
+      // console.log(this.msgfromFather)
       this.$emit('childDo', this.msg)
+      // this.$dispatch('childDo', this.msg)// dispatch在2.0中被废弃
+      this.msg = ''
     }
   },
   props: ['msgfromFather']
