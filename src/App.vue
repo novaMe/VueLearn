@@ -23,7 +23,7 @@ import Componenta from './components/ComponentA' // 引入自定义组件
 export default {
   data () {
     return {
-      title: '<span>love</span>Vue.js',
+      title: '<span class="head">LOVE</span>Vue.js',
       content: 'This is my first vue menu list',
       items: Store.fetch(),
       newItem: '',
@@ -83,5 +83,20 @@ li{
   cursor:pointer;
   font-size:20px;
   text-decoration: none;
+}
+.head {
+  background-color: #00d4b4;
+  font-size: 38px;
+  padding:0px 4px;
+  border:1px solid #000000;
+  border-radius: 4px;
+
+}
+input {
+  width:500px;
+  height:58px;
+  font-size:45px;
+  padding:2px 2px;
+  outline:none;
 }
 </style>
